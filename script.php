@@ -52,7 +52,7 @@
             
             foreach($users as $user){
                 
-                // $mail->clearAddresses();
+                // php mailer call
                 $mail->addAddress($user['email']);
                 $mail->Subject = 'Github Timeline Tracker';
                 $mail->msgHTML($user['message']);
